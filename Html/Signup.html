@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../Bootstrap/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+   
+<title>Signup Form</title>
+<style type="text/css">
+	.Signup-form {
+		width: 340px;
+    	margin: 50px auto;
+	}
+    .Signup-form form {
+    	margin-bottom: 15px;
+        background: #548063;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+    .Signup-form h2 {
+        margin: 0 0 15px;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .btn {        
+        font-size: 15px;
+        font-weight: bold;
+    }
+	
+	body
+	{
+		background-image: url("../Images/homebg.png");
+	}
+	a{
+	color:white;
+	
+	}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand" style="background-color:#6a7f96;">
+  <a class="navbar-brand" href="index.html">WebFree</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Series</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Movie
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="Signup.html">Signup</button></a>
+	<button class="btn btn-outline-success my-2 my-sm-0" type="submit" ><a href="login.html">Login</button></a>
+    </form>
+  </div>
+</nav>
+
+
+
+
+<div class="Signup-form">
+    <form action="regestration.php" method="post">
+        <h2 class="text-center">Signup</h2>       
+        <div class="form-group">
+		<div class="form-group">
+		<label for="sel1">Select Type:</label>
+		<select class="form-control" id="sel1" name="usertype">
+		<option>User</option>
+		<option>Admin</option>
+		</select>
+		</div>
+            <input type="text" class="form-control" placeholder="Username" required="required" name="username">
+        </div>
+		<div class="form-group">
+            <input type="text" class="form-control" placeholder="Email-id" required="required" name="email">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" required="required" name="password">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" placeholder=" Confirm Password" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Signup</button>
+        </div>
+        <div class="clearfix">
+            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+            
+        </div>        
+    </form>
+    <p class="text-center"><a href="Signup.html" style color=black;>Create an Account </a></p>
+</div>
+</body>
+</html>                                		                            
